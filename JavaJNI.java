@@ -1,8 +1,8 @@
 public class JavaJNI {  // Save as HelloJNI.java
    static {
-      System.loadLibrary("load"); // Load native library hello.dll (Windows) or libhello.so (Unixes)
+      System.loadLibrary("load"); // Load native library load.dll (Windows) or libload.so (Unixes)
                                    //  at runtime
-                                   // This library contains a native method called sayHello()
+                                   
    }
  
    // Declare an instance native method sayHello() which receives no parameter and returns void
