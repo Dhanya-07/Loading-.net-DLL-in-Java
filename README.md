@@ -10,11 +10,6 @@ Native AOT(Ahead Of Time)compilation can be used with both Windows and Linux pla
 
 2) Annote the functions to be exported with UnmanagedCallersOnlyAttribute.
      
-     Include the following in .csproj file:
-     
-     <PublishAot>true</PublishAot> //This will enable native AOT compilation during publish
-     <StripSymbols>true</StripSymbols> //[Only for Linux]to produce .dbg file in linux
-
 3) Publish the C# code,
 
        Static Library:  dotnet publish /p:NativeLib=Static -r win-x64 -c release //For Linux -: linux-64
@@ -22,11 +17,15 @@ Native AOT(Ahead Of Time)compilation can be used with both Windows and Linux pla
        
 4) Construct a C code calling the exported functions from C#.
 
-5) Construct a Java code with native functions.
+5) Construct a Java code with call to native functions(C functions).
 
-6) Include the generated headers from java in the C code .
+6) Compile the Java Code.
 
-7) Compile the C code.
+      javac -h . filename.java
+
+8) Include the generated headers in the C code .
+
+7) Compile C code to create DLL.
 
 8) Run the Java Program.
     
