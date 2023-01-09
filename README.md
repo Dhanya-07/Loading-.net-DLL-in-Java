@@ -9,6 +9,11 @@ Native AOT(Ahead Of Time)compilation can be used with both Windows and Linux pla
 1) Create a C# class library either in Visual Studio or Visual Studio Code    
 
 2) Annote the functions to be exported with UnmanagedCallersOnlyAttribute.
+     
+     Include the following in .csproj file:
+     
+     <PublishAot>true</PublishAot> //This will enable native AOT compilation during publish
+     <StripSymbols>true</StripSymbols> //[Only for Linux]to produce .dbg file in linux
 
 3) Publish the C# code,
 
