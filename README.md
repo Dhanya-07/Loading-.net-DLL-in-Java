@@ -21,7 +21,7 @@ Native AOT(Ahead Of Time)compilation can be used with both Windows and Linux pla
 
 6) Compile the Java Code.
 
-      javac -h . filename.java
+       javac -h . filename.java
 
 8) Include the generated headers in the C code .
 
