@@ -23,7 +23,7 @@
 #define symLoad dlsym
 #endif
 
-#include "HelloJNI.h"
+#include "JavaJNI.h"
 #include <stdlib.h>
 #include <stdio.h>
 
