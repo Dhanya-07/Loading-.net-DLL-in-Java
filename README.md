@@ -22,7 +22,7 @@ Native AOT(Ahead Of Time)compilation can be used with both Windows and Linux pla
 
 6) Include the generated headers from java in the C code .
 
-7)Compile the C code
+7)Compile the C code.
 
 8) Run the Java Program.
     
